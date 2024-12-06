@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Symbolconfiguration xmlns="http://www.3s-software.com/schemas/Symbolconfiguration.xsd">
+  <Header>
+    <Version>3.5.14.0</Version>
+    <SymbolConfigObject version="4.3.0.0" runtimeid="3.5.19.0" libversion="4.3.0.0" compiler="3.5.19.10" lmm="3.5.19.10" profile="ctrlX PLC 1.20.1+" settings="SupportOPCUA, IncludeExecutables, XmlIncludeComments, XmlIncludeExecutables, LayoutCalculator=CompatibilityClientSideLayoutCalculator" />
+    <ProjectInfo name="Project_Uas_Mes" devicename="VirtualControl_1" appname="Application" />
+  </Header>
+  <TypeList>
+    <TypeSimple name="T_BOOL" size="1" swapsize="0" typeclass="Bool" iecname="BOOL" />
+    <TypeSimple name="T_TIME" size="4" swapsize="4" typeclass="Time" iecname="TIME" />
+    <TypeUserDef name="T_TON" size="32" nativesize="32" typeclass="Userdef" pouclass="FUNCTION_BLOCK" iecname="TON">
+      <UserDefElement iecname="IN" type="T_BOOL" byteoffset="8" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="PT" type="T_TIME" byteoffset="12" vartype="VAR_INPUT" access="ReadWrite" />
+      <UserDefElement iecname="Q" type="T_BOOL" byteoffset="16" vartype="VAR_OUTPUT" access="ReadWrite" />
+      <UserDefElement iecname="ET" type="T_TIME" byteoffset="20" vartype="VAR_OUTPUT" access="ReadWrite" />
+    </TypeUserDef>
+  </TypeList>
+  <NodeList>
+    <Node name="Application">
+      <Node name="Project_Uas_Mes">
+        <Node name="AUTO_START_BUTTON" type="T_BOOL" access="ReadWrite" />
+        <Node name="AUTO_START_BUTTON_INDICATOR" type="T_BOOL" access="ReadWrite" />
+        <Node name="AUTO_SWITCH" type="T_BOOL" access="ReadWrite" />
+        <Node name="AUTO_SWITCH_INDICATOR" type="T_BOOL" access="ReadWrite" />
+        <Node name="Elapsed_Time" type="T_TIME" access="ReadWrite" />
+        <Node name="K1" type="T_BOOL" access="ReadWrite" />
+        <Node name="K2" type="T_BOOL" access="ReadWrite" />
+        <Node name="K3" type="T_BOOL" access="ReadWrite" />
+        <Node name="K4" type="T_BOOL" access="ReadWrite" />
+        <Node name="K5" type="T_BOOL" access="ReadWrite" />
+        <Node name="K6" type="T_BOOL" access="ReadWrite" />
+        <Node name="K7" type="T_BOOL" access="ReadWrite" />
+        <Node name="K8" type="T_BOOL" access="ReadWrite" />
+        <Node name="LS1" type="T_BOOL" access="ReadWrite" />
+        <Node name="LS2" type="T_BOOL" access="ReadWrite" />
+        <Node name="MANUAL" type="T_BOOL" access="ReadWrite" />
+        <Node name="MANUAL_INDICATOR" type="T_BOOL" access="ReadWrite" />
+        <Node name="MOTOR_FORWARD" type="T_BOOL" access="ReadWrite" />
+        <Node name="MOTOR_REVERSE" type="T_BOOL" access="ReadWrite" />
+        <Node name="SW1" type="T_BOOL" access="ReadWrite" />
+        <Node name="SW2" type="T_BOOL" access="ReadWrite" />
+        <Node name="SW3" type="T_BOOL" access="ReadWrite" />
+        <Node name="TIMER_1" type="T_TON" access="ReadWrite" />
+      </Node>
+      <Node name="V1_Project_Uas_Mes">
+        <Node name="AUTO_START_BUTTON" type="T_BOOL" access="ReadWrite" />
+        <Node name="AUTO_START_BUTTON_INDICATOR" type="T_BOOL" access="ReadWrite" />
+        <Node name="AUTO_SWITCH" type="T_BOOL" access="ReadWrite" />
+        <Node name="AUTO_SWITCH_INDICATOR" type="T_BOOL" access="ReadWrite" />
+        <Node name="COIL" type="T_BOOL" access="ReadWrite" />
+        <Node name="Elapsed_Time" type="T_TIME" access="ReadWrite" />
+        <Node name="K1" type="T_BOOL" access="ReadWrite" />
+        <Node name="K2" type="T_BOOL" access="ReadWrite" />
+        <Node name="K3" type="T_BOOL" access="ReadWrite" />
+        <Node name="K4" type="T_BOOL" access="ReadWrite" />
+        <Node name="K5" type="T_BOOL" access="ReadWrite" />
+        <Node name="K6" type="T_BOOL" access="ReadWrite" />
+        <Node name="K7" type="T_BOOL" access="ReadWrite" />
+        <Node name="K8" type="T_BOOL" access="ReadWrite" />
+        <Node name="K9" type="T_BOOL" access="ReadWrite" />
+        <Node name="LS1" type="T_BOOL" access="ReadWrite" />
+        <Node name="LS2" type="T_BOOL" access="ReadWrite" />
+        <Node name="MANUAL" type="T_BOOL" access="ReadWrite" />
+        <Node name="MANUAL_INDICATOR" type="T_BOOL" access="ReadWrite" />
+        <Node name="MOTOR_FORWARD" type="T_BOOL" access="ReadWrite" />
+        <Node name="MOTOR_REVERSE" type="T_BOOL" access="ReadWrite" />
+        <Node name="START" type="T_BOOL" access="ReadWrite" />
+        <Node name="STOP" type="T_BOOL" access="ReadWrite" />
+        <Node name="SW1" type="T_BOOL" access="ReadWrite" />
+        <Node name="SW2" type="T_BOOL" access="ReadWrite" />
+        <Node name="SW3" type="T_BOOL" access="ReadWrite" />
+        <Node name="TIMER" type="T_TON" access="ReadWrite" />
+      </Node>
+    </Node>
+  </NodeList>
+</Symbolconfiguration>
